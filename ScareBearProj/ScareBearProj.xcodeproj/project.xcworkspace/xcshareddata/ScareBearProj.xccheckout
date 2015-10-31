@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AC0604AC-CCAD-4ABB-AD05-B9A4122B6A55</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ScareBearProj</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>91AD48ECB1102ECD5D0BE22E4EF4B9BD2AB12CBC</key>
+		<string>https://github.com/mrmarss/ScareBear.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScareBearProj/ScareBearProj.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>91AD48ECB1102ECD5D0BE22E4EF4B9BD2AB12CBC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mrmarss/ScareBear.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>91AD48ECB1102ECD5D0BE22E4EF4B9BD2AB12CBC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>91AD48ECB1102ECD5D0BE22E4EF4B9BD2AB12CBC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScareBear</string>
+		</dict>
+	</array>
+</dict>
+</plist>
