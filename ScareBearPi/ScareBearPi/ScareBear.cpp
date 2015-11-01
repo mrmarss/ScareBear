@@ -11,6 +11,7 @@
 #include "MusicFileManager.h"
 #include "GetCareFilesPage.h"
 #include "GetScareFilesPage.h"
+#include "CommandPage.h"
 
 #include <cstdlib>
 #include <iostream>
@@ -18,7 +19,7 @@
 #include <chrono>         // std::chrono::seconds
 #include <dirent.h>
 
-#define kDATA_FOLDER    "/Users/btan3333/ScareBear"
+#define kDATA_FOLDER    "/home/pi/ScareBear"
 #define kMUSIC_FOLDER   "music"
 
 ScareBear::ScareBear()
@@ -37,6 +38,7 @@ ScareBear::ScareBear()
     _webServer = new WebServer(8888);
     _webServer->addPage(new GetCareFilesPage());
     _webServer->addPage(new GetScareFilesPage());
+    _webServer->addPage(new CommandPage());
     _webServer->start();
 }
 

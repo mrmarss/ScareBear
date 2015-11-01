@@ -54,7 +54,7 @@ struct Request
  */
 WebSession * WebServer::getSession (struct MHD_Connection *connection)
 {
-    WebSession *result;
+    WebSession *result = NULL;
     const char *cookie;
     
     cookie = MHD_lookup_connection_value (connection,
@@ -73,7 +73,7 @@ WebSession * WebServer::getSession (struct MHD_Connection *connection)
         }
     }
     
-    if (result != NULL)
+    if (result == NULL)
     {
         /* not a super-secure way to generate a random session ID,
          but should do for a simple example... */
@@ -365,11 +365,13 @@ int WebServer::createResponse (struct MHD_Connection *connection,
         MHD_post_process (request->pp,
                           upload_data,
                           *upload_data_size);
+        /*
         if (0 != *upload_data_size)
         {
             *upload_data_size = 0;
             return MHD_YES;
         }
+        */
         /* done with POST data, serve response */
         MHD_destroy_post_processor (request->pp);
         request->pp = NULL;
@@ -416,6 +418,8 @@ int WebServer::createResponse (struct MHD_Connection *connection,
         {
             page = _notFoundPage;
         }
+        
+        std::cout << "Serving page" << std::endl;
         
         struct MHD_Response *response;
         

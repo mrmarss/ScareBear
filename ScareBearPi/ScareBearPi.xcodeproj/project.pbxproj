@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91271B0B1BE6867F006FFF47 /* WebSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91271B091BE6867F006FFF47 /* WebSession.cpp */; };
 		91A2B0D11BE6690500A09517 /* CommandPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91A2B0CF1BE6690500A09517 /* CommandPage.cpp */; };
 		91A2B0D41BE66B7200A09517 /* GetCareFilesPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91A2B0D21BE66B7200A09517 /* GetCareFilesPage.cpp */; };
 		91A90A7A1BE61551001B8BA4 /* ScareBear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91A90A781BE61551001B8BA4 /* ScareBear.cpp */; };
@@ -15,7 +16,6 @@
 		91A90A871BE630B5001B8BA4 /* WebPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91A90A851BE630B5001B8BA4 /* WebPage.cpp */; };
 		91A90A951BE63C94001B8BA4 /* WebServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91A90A821BE63080001B8BA4 /* WebServer.cpp */; };
 		91A90A961BE63CE5001B8BA4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91DCEF361BE543820033FF63 /* main.cpp */; };
-		91A90A991BE63E59001B8BA4 /* WebSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91A90A971BE63E59001B8BA4 /* WebSession.cpp */; };
 		91A90A9D1BE64BD4001B8BA4 /* GetScareFilesPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91A90A9B1BE64BD4001B8BA4 /* GetScareFilesPage.cpp */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +61,8 @@
 		910BA1381BE54AA600704325 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
 		910BA1391BE54AA600704325 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
 		910BA13A1BE54AA600704325 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		91271B091BE6867F006FFF47 /* WebSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSession.cpp; sourceTree = "<group>"; };
+		91271B0A1BE6867F006FFF47 /* WebSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSession.h; sourceTree = "<group>"; };
 		91A2B0CF1BE6690500A09517 /* CommandPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandPage.cpp; sourceTree = "<group>"; };
 		91A2B0D01BE6690500A09517 /* CommandPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandPage.h; sourceTree = "<group>"; };
 		91A2B0D21BE66B7200A09517 /* GetCareFilesPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetCareFilesPage.cpp; sourceTree = "<group>"; };
@@ -76,8 +78,6 @@
 		91A90A831BE63080001B8BA4 /* WebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServer.h; sourceTree = "<group>"; };
 		91A90A851BE630B5001B8BA4 /* WebPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebPage.cpp; sourceTree = "<group>"; };
 		91A90A861BE630B5001B8BA4 /* WebPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPage.h; sourceTree = "<group>"; };
-		91A90A971BE63E59001B8BA4 /* WebSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WebSession.cpp; path = rapidjson/WebSession.cpp; sourceTree = "<group>"; };
-		91A90A981BE63E59001B8BA4 /* WebSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebSession.h; path = rapidjson/WebSession.h; sourceTree = "<group>"; };
 		91A90A9B1BE64BD4001B8BA4 /* GetScareFilesPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetScareFilesPage.cpp; sourceTree = "<group>"; };
 		91A90A9C1BE64BD4001B8BA4 /* GetScareFilesPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetScareFilesPage.h; sourceTree = "<group>"; };
 		91DCEF331BE543820033FF63 /* ScareBearPi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScareBearPi; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,8 +162,6 @@
 				91A90A831BE63080001B8BA4 /* WebServer.h */,
 				91A90A851BE630B5001B8BA4 /* WebPage.cpp */,
 				91A90A861BE630B5001B8BA4 /* WebPage.h */,
-				91A90A971BE63E59001B8BA4 /* WebSession.cpp */,
-				91A90A981BE63E59001B8BA4 /* WebSession.h */,
 			);
 			name = WebServer;
 			sourceTree = "<group>";
@@ -187,6 +185,8 @@
 		91DCEF351BE543820033FF63 /* ScareBearPi */ = {
 			isa = PBXGroup;
 			children = (
+				91271B091BE6867F006FFF47 /* WebSession.cpp */,
+				91271B0A1BE6867F006FFF47 /* WebSession.h */,
 				91DCEF361BE543820033FF63 /* main.cpp */,
 				91A90A781BE61551001B8BA4 /* ScareBear.cpp */,
 				91A90A791BE61551001B8BA4 /* ScareBear.h */,
@@ -267,7 +267,7 @@
 				91A90A951BE63C94001B8BA4 /* WebServer.cpp in Sources */,
 				91A2B0D41BE66B7200A09517 /* GetCareFilesPage.cpp in Sources */,
 				91A90A7A1BE61551001B8BA4 /* ScareBear.cpp in Sources */,
-				91A90A991BE63E59001B8BA4 /* WebSession.cpp in Sources */,
+				91271B0B1BE6867F006FFF47 /* WebSession.cpp in Sources */,
 				91A90A961BE63CE5001B8BA4 /* main.cpp in Sources */,
 				91A90A871BE630B5001B8BA4 /* WebPage.cpp in Sources */,
 				91A90A7D1BE6171D001B8BA4 /* ModeHandler.cpp in Sources */,
