@@ -17,7 +17,7 @@
 #include <chrono>         // std::chrono::seconds
 #include <dirent.h>
 
-#define kDATA_FOLDER    "/Users/Doug/ScareBear"
+#define kDATA_FOLDER    "/Users/btan3333/ScareBear"
 #define kMUSIC_FOLDER   "music"
 
 ScareBear::ScareBear()
