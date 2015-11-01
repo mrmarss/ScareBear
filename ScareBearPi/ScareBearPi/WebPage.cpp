@@ -32,3 +32,8 @@ std::string WebPage::fillRequest(WebSession * aSession)
 {
     return "HELLO!";
 }
+
+void WebPage::handlePost(WebSession * aSession, const char * aData, size_t aDataLength)
+{
+    
+}

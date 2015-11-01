@@ -337,8 +337,7 @@ int WebServer::createResponse (struct MHD_Connection *connection,
         *ptr = request;
         if (0 == strcmp (method, MHD_HTTP_METHOD_POST))
         {
-            request->pp = MHD_create_post_processor (connection, 1024,
-                                                     &post_iterator, request);
+            request->pp = MHD_create_post_processor (connection, 1024, &post_iterator, request);
             if (NULL == request->pp)
             {
                 fprintf (stderr, "Failed to setup post processor for `%s'\n",
@@ -377,6 +376,25 @@ int WebServer::createResponse (struct MHD_Connection *connection,
         method = MHD_HTTP_METHOD_GET; /* fake 'GET' */
         if (NULL != request->post_url)
             url = request->post_url;
+        
+        
+        //handle data
+        /* find out which page to serve */
+        WebPage * page = NULL;
+        for (auto it = _pages.begin(); it != _pages.end(); it++)
+        {
+            WebPage *current = *it;
+            if (strcmp (current->getURL().c_str(), url) == 0)
+            {
+                page = current;
+                break;
+            }
+        }
+        
+        if (page != NULL)
+        {
+            page->handlePost(session, upload_data, *upload_data_size);
+        }
     }
     
     if ( (0 == strcmp (method, MHD_HTTP_METHOD_GET)) ||

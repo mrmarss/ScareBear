@@ -13,10 +13,10 @@
 
 #include "WebPage.h"
 
-class GetMusicFilesPage : public WebPage
+class GetScareFilesPage : public WebPage
 {
 public:
-    GetMusicFilesPage();
+    GetScareFilesPage();
     
     std::string fillRequest(WebSession * aSession);
 };

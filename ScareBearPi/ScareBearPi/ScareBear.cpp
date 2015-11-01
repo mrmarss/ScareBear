@@ -9,7 +9,8 @@
 #include "ScareBear.h"
 
 #include "MusicFileManager.h"
-#include "GetMusicFilesPage.h"
+#include "GetCareFilesPage.h"
+#include "GetScareFilesPage.h"
 
 #include <cstdlib>
 #include <iostream>
@@ -34,7 +35,8 @@ ScareBear::ScareBear()
     system(("mkdir -p " + musicFolder).c_str());
     
     _webServer = new WebServer(8888);
-    _webServer->addPage(new GetMusicFilesPage());
+    _webServer->addPage(new GetCareFilesPage());
+    _webServer->addPage(new GetScareFilesPage());
     _webServer->start();
 }
 
@@ -62,4 +64,9 @@ void ScareBear::run()
 MusicFileManager * ScareBear::getMusicManager()
 {
     return _musicManager;
+}
+
+void ScareBear::setScareMode(bool aMode)
+{
+    _isScareMode = aMode;
 }

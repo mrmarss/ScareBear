@@ -1,12 +1,13 @@
 //
-//  GetMusicFilesPage.cpp
+//  GetCareFilesPage.cpp
 //  ScareBearPi
 //
 //  Created by Doug on 11/1/15.
 //  Copyright (c) 2015 Doug Roeper. All rights reserved.
 //
 
-#include "GetMusicFilesPage.h"
+#include "GetCareFilesPage.h"
+
 
 #include <iostream>
 
@@ -19,16 +20,16 @@
 
 using namespace rapidjson;
 
-GetMusicFilesPage::GetMusicFilesPage() : WebPage("/getClips")
+GetCareFilesPage::GetCareFilesPage() : WebPage("/getCareClips")
 {
     
 }
 
-std::string GetMusicFilesPage::fillRequest(WebSession * aSession)
+std::string GetCareFilesPage::fillRequest(WebSession * aSession)
 {
     std::string result;
     
-    auto list = ScareBear::getInstance().getMusicManager()->getFiles();
+    auto list = ScareBear::getInstance().getMusicManager()->getCareFiles();
     
     Document d;
     d.Parse("{}");

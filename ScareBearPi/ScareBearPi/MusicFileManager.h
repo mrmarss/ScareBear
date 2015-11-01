@@ -23,9 +23,9 @@ public:
     
     void setDirectory(std::string aDirectory);
     
-    std::list<std::string> getFiles();
-    
-    
+    std::list<std::string> getCareFiles();
+    std::list<std::string> getScareFiles();
+    void playClip(std::string aClip);
 };
 
 #endif /* defined(__ScareBearPi__MusicFileManager__) */

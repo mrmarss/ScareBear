@@ -27,7 +27,7 @@ public:
     std::string getMime();
     
     virtual std::string fillRequest(WebSession * aSession);
-    
+    virtual void handlePost(WebSession * aSession, const char * aData, size_t aDataLength);
 };
 
 #endif /* defined(__ScareBearPi__WebPage__) */

@@ -31,10 +31,9 @@ public:
         PlayMusicMode
     };
     
-    void setMode(rapidjson::Document & aConfig);
-    
     MusicFileManager * getMusicManager();
     
+    void setScareMode(bool aMode);
     void run();
     
 private:

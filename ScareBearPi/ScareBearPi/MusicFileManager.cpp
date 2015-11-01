@@ -10,6 +10,12 @@
 
 #include <dirent.h>
 #include <iostream>
+#include <cstdlib>
+#include <stdio.h>
+#include <SDL2/SDL.h>
+
+#define kCARE   "care"
+#define kSCARE  "scare"
 
 MusicFileManager::MusicFileManager()
 {
@@ -29,13 +35,13 @@ bool hasEnding (std::string const &fullString, std::string const &ending) {
     }
 }
 
-std::list<std::string> MusicFileManager::getFiles()
+std::list<std::string> MusicFileManager::getCareFiles()
 {
     std::list<std::string> results;
     
     DIR *dir;
     struct dirent *ent;
-    if ((dir = opendir(_directory.c_str())) != NULL)
+    if ((dir = opendir((_directory + "/" + kCARE).c_str())) != NULL)
     {
         /* print all the files and directories within directory */
         while ((ent = readdir (dir)) != NULL)
@@ -57,3 +63,41 @@ std::list<std::string> MusicFileManager::getFiles()
     
     return results;
 }
+
+std::list<std::string> MusicFileManager::getScareFiles()
+{
+    std::list<std::string> results;
+    
+    DIR *dir;
+    struct dirent *ent;
+    if ((dir = opendir((_directory + "/" + kSCARE).c_str())) != NULL)
+    {
+        /* print all the files and directories within directory */
+        while ((ent = readdir (dir)) != NULL)
+        {
+            std::string fileName = ent->d_name;
+            if (fileName != "." && fileName != ".." && hasEnding(fileName, ".mp3"))
+            {
+                results.push_back(fileName);
+            }
+        }
+        closedir (dir);
+    }
+    else
+    {
+        /* could not open directory */
+        std::cout << "MusicFileManager - couldn't open music folder" << std::endl;
+    }
+    
+    
+    return results;
+}
+
+void MusicFileManager::playClip(std::string aClip)
+{
+    std::string fullPath = _directory + "/" + aClip;
+    system(("omxplayer " + fullPath).c_str());
+}
+
+
+
