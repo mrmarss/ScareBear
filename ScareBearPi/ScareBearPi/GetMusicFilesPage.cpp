@@ -39,8 +39,7 @@ std::string GetMusicFilesPage::fillRequest(WebSession * aSession)
     {
         std::string clipName = *it;
         Value name;
-        std::cout << clipName << std::endl;
-        name.SetString(clipName.c_str(), clipName.length());
+        name.SetString(clipName.c_str(), clipName.length(), d.GetAllocator());
         clips.PushBack(name, d.GetAllocator());
     }
     d.AddMember("clips", clips, d.GetAllocator());
