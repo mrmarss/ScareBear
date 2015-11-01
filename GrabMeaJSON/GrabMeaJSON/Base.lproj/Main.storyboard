@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScareBearApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-6Y-icL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2N-N7-OFh">
+                                <rect key="frame" x="127" y="221" width="120" height="225"/>
+                                <animations/>
+                                <state key="normal" image="button-online-up"/>
+                                <connections>
+                                    <action selector="emotionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhZ-Bh-utz"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RpA-gy-eD2">
+                                <rect key="frame" x="47" y="28" width="280" height="165"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SoundClipCell" textLabel="D2C-SU-Ntf" style="IBUITableViewCellStyleDefault" id="GHH-oc-DUL">
+                                        <rect key="frame" x="0.0" y="28" width="280" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GHH-oc-DUL" id="O6G-qd-7uC">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D2C-SU-Ntf">
+                                                    <rect key="frame" x="15" y="0.0" width="250" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Title">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ7-ji-Hxj">
+                                <rect key="frame" x="122" y="486" width="131" height="139"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="NPq-vB-Vni"/>
+                                    <constraint firstAttribute="height" constant="139" id="vTs-gZ-mWD"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="play"/>
+                                <connections>
+                                    <action selector="pausePlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJ1-5O-TGL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rQ7-ji-Hxj" firstAttribute="top" secondItem="D2N-N7-OFh" secondAttribute="bottom" constant="40" id="6bq-Ml-7D6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rQ7-ji-Hxj" secondAttribute="bottom" constant="42" id="6dW-3T-fgi"/>
+                            <constraint firstItem="RpA-gy-eD2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="8PN-uj-xIg"/>
+                            <constraint firstItem="RpA-gy-eD2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="9Lp-oz-vIE"/>
+                            <constraint firstItem="rQ7-ji-Hxj" firstAttribute="centerX" secondItem="RpA-gy-eD2" secondAttribute="centerX" id="CVE-0C-4AI"/>
+                            <constraint firstAttribute="trailing" secondItem="V7B-6Y-icL" secondAttribute="trailing" id="Dti-v9-hDe"/>
+                            <constraint firstItem="D2N-N7-OFh" firstAttribute="top" secondItem="RpA-gy-eD2" secondAttribute="bottom" constant="28" id="GKn-dT-HrQ"/>
+                            <constraint firstItem="V7B-6Y-icL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JLU-Rr-1K8"/>
+                            <constraint firstItem="V7B-6Y-icL" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Sb6-QB-FLC"/>
+                            <constraint firstItem="rQ7-ji-Hxj" firstAttribute="centerX" secondItem="V7B-6Y-icL" secondAttribute="centerX" id="YyN-fd-oSG"/>
+                            <constraint firstItem="rQ7-ji-Hxj" firstAttribute="centerX" secondItem="D2N-N7-OFh" secondAttribute="centerX" id="gPQ-Hb-whQ"/>
+                            <constraint firstItem="V7B-6Y-icL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="tE8-VY-MhM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="soundClipTableView" destination="RpA-gy-eD2" id="adn-Qw-7fV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414.5" y="181.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="750" height="1334"/>
+        <image name="button-online-up" width="120" height="225"/>
+        <image name="play" width="302" height="376"/>
+    </resources>
+</document>

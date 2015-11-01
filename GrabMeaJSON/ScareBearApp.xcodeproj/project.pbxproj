@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A12AA27A1BE5591E00AE0ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA2791BE5591E00AE0ED7 /* AppDelegate.swift */; };
+		A12AA27C1BE5591E00AE0ED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA27B1BE5591E00AE0ED7 /* ViewController.swift */; };
+		A12AA27F1BE5591E00AE0ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12AA27D1BE5591E00AE0ED7 /* Main.storyboard */; };
+		A12AA2811BE5591E00AE0ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12AA2801BE5591E00AE0ED7 /* Assets.xcassets */; };
+		A12AA2841BE5591E00AE0ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12AA2821BE5591E00AE0ED7 /* LaunchScreen.storyboard */; };
+		A12AA28F1BE5591E00AE0ED7 /* GrabMeaJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA28E1BE5591E00AE0ED7 /* GrabMeaJSONTests.swift */; };
+		A12AA29A1BE5591E00AE0ED7 /* GrabMeaJSONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AA2991BE5591E00AE0ED7 /* GrabMeaJSONUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A12AA28B1BE5591E00AE0ED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A12AA26E1BE5591E00AE0ED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A12AA2751BE5591E00AE0ED7;
+			remoteInfo = GrabMeaJSON;
+		};
+		A12AA2961BE5591E00AE0ED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A12AA26E1BE5591E00AE0ED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A12AA2751BE5591E00AE0ED7;
+			remoteInfo = GrabMeaJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A12AA2761BE5591E00AE0ED7 /* ScareBearApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScareBearApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12AA2791BE5591E00AE0ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A12AA27B1BE5591E00AE0ED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A12AA27E1BE5591E00AE0ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A12AA2801BE5591E00AE0ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A12AA2831BE5591E00AE0ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A12AA2851BE5591E00AE0ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12AA28A1BE5591E00AE0ED7 /* ScareBearApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScareBearApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12AA28E1BE5591E00AE0ED7 /* GrabMeaJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabMeaJSONTests.swift; sourceTree = "<group>"; };
+		A12AA2901BE5591E00AE0ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12AA2951BE5591E00AE0ED7 /* ScareBearApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScareBearApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12AA2991BE5591E00AE0ED7 /* GrabMeaJSONUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabMeaJSONUITests.swift; sourceTree = "<group>"; };
+		A12AA29B1BE5591E00AE0ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A12AA2731BE5591E00AE0ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12AA2871BE5591E00AE0ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12AA2921BE5591E00AE0ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12AA26D1BE5591E00AE0ED7 = {
+			isa = PBXGroup;
+			children = (
+				A12AA2781BE5591E00AE0ED7 /* GrabMeaJSON */,
+				A12AA28D1BE5591E00AE0ED7 /* GrabMeaJSONTests */,
+				A12AA2981BE5591E00AE0ED7 /* GrabMeaJSONUITests */,
+				A12AA2771BE5591E00AE0ED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A12AA2771BE5591E00AE0ED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A12AA2761BE5591E00AE0ED7 /* ScareBearApp.app */,
+				A12AA28A1BE5591E00AE0ED7 /* ScareBearApp.xctest */,
+				A12AA2951BE5591E00AE0ED7 /* ScareBearApp.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A12AA2781BE5591E00AE0ED7 /* GrabMeaJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A12AA2791BE5591E00AE0ED7 /* AppDelegate.swift */,
+				A12AA27B1BE5591E00AE0ED7 /* ViewController.swift */,
+				A12AA27D1BE5591E00AE0ED7 /* Main.storyboard */,
+				A12AA2801BE5591E00AE0ED7 /* Assets.xcassets */,
+				A12AA2821BE5591E00AE0ED7 /* LaunchScreen.storyboard */,
+				A12AA2851BE5591E00AE0ED7 /* Info.plist */,
+			);
+			path = GrabMeaJSON;
+			sourceTree = "<group>";
+		};
+		A12AA28D1BE5591E00AE0ED7 /* GrabMeaJSONTests */ = {
+			isa = PBXGroup;
+			children = (
+				A12AA28E1BE5591E00AE0ED7 /* GrabMeaJSONTests.swift */,
+				A12AA2901BE5591E00AE0ED7 /* Info.plist */,
+			);
+			path = GrabMeaJSONTests;
+			sourceTree = "<group>";
+		};
+		A12AA2981BE5591E00AE0ED7 /* GrabMeaJSONUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A12AA2991BE5591E00AE0ED7 /* GrabMeaJSONUITests.swift */,
+				A12AA29B1BE5591E00AE0ED7 /* Info.plist */,
+			);
+			path = GrabMeaJSONUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A12AA2751BE5591E00AE0ED7 /* ScareBearApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12AA29E1BE5591E00AE0ED7 /* Build configuration list for PBXNativeTarget "ScareBearApp" */;
+			buildPhases = (
+				A12AA2721BE5591E00AE0ED7 /* Sources */,
+				A12AA2731BE5591E00AE0ED7 /* Frameworks */,
+				A12AA2741BE5591E00AE0ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScareBearApp;
+			productName = GrabMeaJSON;
+			productReference = A12AA2761BE5591E00AE0ED7 /* ScareBearApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A12AA2891BE5591E00AE0ED7 /* ScareBearAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12AA2A11BE5591E00AE0ED7 /* Build configuration list for PBXNativeTarget "ScareBearAppTests" */;
+			buildPhases = (
+				A12AA2861BE5591E00AE0ED7 /* Sources */,
+				A12AA2871BE5591E00AE0ED7 /* Frameworks */,
+				A12AA2881BE5591E00AE0ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12AA28C1BE5591E00AE0ED7 /* PBXTargetDependency */,
+			);
+			name = ScareBearAppTests;
+			productName = GrabMeaJSONTests;
+			productReference = A12AA28A1BE5591E00AE0ED7 /* ScareBearApp.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A12AA2941BE5591E00AE0ED7 /* ScareBearAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12AA2A41BE5591E00AE0ED7 /* Build configuration list for PBXNativeTarget "ScareBearAppUITests" */;
+			buildPhases = (
+				A12AA2911BE5591E00AE0ED7 /* Sources */,
+				A12AA2921BE5591E00AE0ED7 /* Frameworks */,
+				A12AA2931BE5591E00AE0ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12AA2971BE5591E00AE0ED7 /* PBXTargetDependency */,
+			);
+			name = ScareBearAppUITests;
+			productName = GrabMeaJSONUITests;
+			productReference = A12AA2951BE5591E00AE0ED7 /* ScareBearApp.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A12AA26E1BE5591E00AE0ED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Brian Tan";
+				TargetAttributes = {
+					A12AA2751BE5591E00AE0ED7 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					A12AA2891BE5591E00AE0ED7 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A12AA2751BE5591E00AE0ED7;
+					};
+					A12AA2941BE5591E00AE0ED7 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A12AA2751BE5591E00AE0ED7;
+					};
+				};
+			};
+			buildConfigurationList = A12AA2711BE5591E00AE0ED7 /* Build configuration list for PBXProject "ScareBearApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A12AA26D1BE5591E00AE0ED7;
+			productRefGroup = A12AA2771BE5591E00AE0ED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A12AA2751BE5591E00AE0ED7 /* ScareBearApp */,
+				A12AA2891BE5591E00AE0ED7 /* ScareBearAppTests */,
+				A12AA2941BE5591E00AE0ED7 /* ScareBearAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A12AA2741BE5591E00AE0ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12AA2841BE5591E00AE0ED7 /* LaunchScreen.storyboard in Resources */,
+				A12AA2811BE5591E00AE0ED7 /* Assets.xcassets in Resources */,
+				A12AA27F1BE5591E00AE0ED7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12AA2881BE5591E00AE0ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12AA2931BE5591E00AE0ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A12AA2721BE5591E00AE0ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12AA27C1BE5591E00AE0ED7 /* ViewController.swift in Sources */,
+				A12AA27A1BE5591E00AE0ED7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12AA2861BE5591E00AE0ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12AA28F1BE5591E00AE0ED7 /* GrabMeaJSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12AA2911BE5591E00AE0ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12AA29A1BE5591E00AE0ED7 /* GrabMeaJSONUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A12AA28C1BE5591E00AE0ED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A12AA2751BE5591E00AE0ED7 /* ScareBearApp */;
+			targetProxy = A12AA28B1BE5591E00AE0ED7 /* PBXContainerItemProxy */;
+		};
+		A12AA2971BE5591E00AE0ED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A12AA2751BE5591E00AE0ED7 /* ScareBearApp */;
+			targetProxy = A12AA2961BE5591E00AE0ED7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A12AA27D1BE5591E00AE0ED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12AA27E1BE5591E00AE0ED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A12AA2821BE5591E00AE0ED7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12AA2831BE5591E00AE0ED7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A12AA29C1BE5591E00AE0ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A12AA29D1BE5591E00AE0ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A12AA29F1BE5591E00AE0ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GrabMeaJSON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianTan.GrabMeaJSON;
+				PRODUCT_NAME = ScareBearApp;
+			};
+			name = Debug;
+		};
+		A12AA2A01BE5591E00AE0ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GrabMeaJSON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianTan.GrabMeaJSON;
+				PRODUCT_NAME = ScareBearApp;
+			};
+			name = Release;
+		};
+		A12AA2A21BE5591E00AE0ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrabMeaJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianTan.GrabMeaJSONTests;
+				PRODUCT_NAME = ScareBearApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScareBearApp.app/ScareBearApp";
+			};
+			name = Debug;
+		};
+		A12AA2A31BE5591E00AE0ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrabMeaJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianTan.GrabMeaJSONTests;
+				PRODUCT_NAME = ScareBearApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScareBearApp.app/ScareBearApp";
+			};
+			name = Release;
+		};
+		A12AA2A51BE5591E00AE0ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GrabMeaJSONUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianTan.GrabMeaJSONUITests;
+				PRODUCT_NAME = ScareBearApp;
+				TEST_TARGET_NAME = GrabMeaJSON;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A12AA2A61BE5591E00AE0ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GrabMeaJSONUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BrianTan.GrabMeaJSONUITests;
+				PRODUCT_NAME = ScareBearApp;
+				TEST_TARGET_NAME = GrabMeaJSON;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A12AA2711BE5591E00AE0ED7 /* Build configuration list for PBXProject "ScareBearApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12AA29C1BE5591E00AE0ED7 /* Debug */,
+				A12AA29D1BE5591E00AE0ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12AA29E1BE5591E00AE0ED7 /* Build configuration list for PBXNativeTarget "ScareBearApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12AA29F1BE5591E00AE0ED7 /* Debug */,
+				A12AA2A01BE5591E00AE0ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12AA2A11BE5591E00AE0ED7 /* Build configuration list for PBXNativeTarget "ScareBearAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12AA2A21BE5591E00AE0ED7 /* Debug */,
+				A12AA2A31BE5591E00AE0ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A12AA2A41BE5591E00AE0ED7 /* Build configuration list for PBXNativeTarget "ScareBearAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12AA2A51BE5591E00AE0ED7 /* Debug */,
+				A12AA2A61BE5591E00AE0ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A12AA26E1BE5591E00AE0ED7 /* Project object */;
+}
