@@ -12,7 +12,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <stdio.h>
-#include <SDL2/SDL.h>
 
 #define kCARE   "care"
 #define kSCARE  "scare"
@@ -96,7 +95,8 @@ std::list<std::string> MusicFileManager::getScareFiles()
 void MusicFileManager::playClip(std::string aClip)
 {
     std::string fullPath = _directory + "/" + aClip;
-    system(("omxplayer " + fullPath).c_str());
+    //system(("omxplayer " + fullPath).c_str());
+    system(("afplay " + fullPath).c_str());
 }
 
 
